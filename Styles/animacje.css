@@ -1,0 +1,113 @@
+@keyframes pokazanie {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes wejscie-l {
+    0% {
+        transform:translate(-50%, 0%)
+    }
+    100% {
+        transform:translate(0%, 0%)
+    }
+}
+
+@keyframes wejscie-p {
+    0% {
+        transform:translate(50%, 0%)
+    }
+    100% {
+        transform:translate(0%, 0%)
+    }
+}
+
+@keyframes wejscie-g {
+    0% {
+        transform:translate(0%, -50%)
+    }
+    100% {
+        transform:translate(0%, 0%)
+    }
+}
+
+@keyframes wejscie-d {
+    0% {
+        transform:translate(0%, 50%)
+    }
+    100% {
+        transform:translate(0%, 0%)
+    }
+}
+
+@keyframes poruszanie {
+    0% {
+        background-position-y: -50px;
+    }
+    50% {
+        background-position-y: 0px;
+    }
+    100% {
+        background-position-y: -50px;
+    }
+}
+
+@keyframes obracanie {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.ruchome {
+    animation: poruszanie 5s infinite ease-in-out;
+}
+
+.wizyty_rozwijane {
+    position: absolute;
+    left: 30.75%;
+    top: 0%;
+    height: 10%;
+    width: 8.1%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(0%, 30%);
+    text-align: center;
+    font-size: 150%;
+    z-index: 2;
+}
+
+.wizyty_pole {
+    width: 100%;
+    height: 50%;
+    color: green;
+    z-index: 1;
+}
+
+.obracanie {
+    animation: obracanie 120s infinite linear;
+}
+
+.wejscie-lewo {
+    animation: wejscie-l 0.5s ease-in-out;
+}
+
+.wejscie-prawo {
+    animation: wejscie-p 0.5s ease-in-out;
+}
+
+.wejscie-gora {
+    animation: wejscie-g 0.5s ease-in-out;
+}
+
+.wejscie-dol {
+    animation: wejscie-d 0.5s ease-in-out;
+}
+
+.pokazanie {
+    animation: pokazanie 0.5s ease-in-out;
+}
